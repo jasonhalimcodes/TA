@@ -1,0 +1,12 @@
+def determine_another_region(secondary_region, region_detected, transformed_frame):
+    if secondary_region:
+        secondary_region_idx = region_detected
+        secondary_region_id = region_map[secondary_region_idx]
+        
+        secondary_region_label = "Secondary Region: {}".format(secondary_region_id)
+        draw_label(transformed_frame, secondary_region_label, 10, 80)
+    else:
+        secondary_region_idx = None
+        secondary_region_id = None
+    
+    return secondary_region_idx, secondary_region_id
