@@ -48,4 +48,4 @@ atau
 ```
 python3 dinRoom.py
 ```
-> dinRoom.py dan livRoom.py merupakan program yang memiliki fungsi yang sama, hanya parameter transformasi homografiknya saja yang berbeda (topL, botL, topR, botR)
+> dinRoom.py dan livRoom.py merupakan program yang mengerjakan fungsi yang sama, hanya parameter transformasi homografiknya saja yang berbeda (topL, botL, topR, botR)
