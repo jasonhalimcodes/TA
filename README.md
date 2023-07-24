@@ -31,9 +31,11 @@ $ ./OpenCV-4-6-0.sh
 $ rm OpenCV-4-6-0.sh
 ```
 
+
 ## Setup
 1. Hubungkan Jetson dengan kamera web pada usb port
 2. Hubungkan Jetson dengan jaringan internet melalui dongle wifi atau ethernet
+
 
 ## Persiapan Deteksi Posisi
 1. 
