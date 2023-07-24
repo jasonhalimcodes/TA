@@ -31,14 +31,19 @@ $ ./OpenCV-4-6-0.sh
 $ rm OpenCV-4-6-0.sh
 ```
 
-
 ## Setup
 1. Hubungkan Jetson dengan kamera web pada usb port
 2. Hubungkan Jetson dengan jaringan internet melalui dongle wifi atau ethernet
 
-
 ## Persiapan Deteksi Posisi
-1. 
+> Deteksi posisi dilakukan dengan melakukan transformasi homografik terhadap 4 titik koordinat pada _frame_, dimana 4 titik ini membentuk sebuah area persegi yaitu area lantai.
+1. Buka terminal pada Jetson
+2. Pergi ke _directory_ **utils**
+3. Gunakan _command_ berikut untuk menjalankan program untuk menampilkan titik koordinat pada _frame_ ketika titik pada _frame_ ditekan dengan _mouse left click_ :
+```
+python3 ptCoordinate.py
+```
+4. Ganti _value_ dari **topL**, **botL**, **topR**, **botR** pada program _livRoom.py_ atau _dinRoom.py_ dengan _value_ titik koordinat yang didapat sebelumnya
 
 ## Menggunakan Sistem Deteksi Pose dan Posisi
 1. Buka terminal pada Jetson
@@ -50,4 +55,4 @@ atau
 ```
 python3 dinRoom.py
 ```
-> dinRoom.py dan livRoom.py merupakan program yang mengerjakan fungsi yang sama, hanya parameter transformasi homografiknya saja yang berbeda (topL, botL, topR, botR)
+> dinRoom.py dan livRoom.py merupakan program yang mengerjakan fungsi yang sama, hanya parameter transformasi homografiknya saja yang berbeda (**topL**, **botL**, **topR**, **botR**)
