@@ -2,7 +2,7 @@
 A Capstone Final Project by Jason Halim C11190014 [Pose and Position Detection with YOLOv4-tiny & OpenCV DNN Library]
 # ------------------------------------------------------------------------------
 # User - Guide
-## Prerequisites
+## Mempersiapkan _Inference Environment_ pada Jetson
 1. Install _dependencies_ OpenCV pada Jetson
 ```
 $ sudo apt-get update
